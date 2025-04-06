@@ -11,26 +11,74 @@
 <body>
     <div class="container">
         <nav>
-            <input type="text" id="city" placeholder="Enter city name">
-            <button id="submit"><img src="search.png" alt=""></button>
-        </nav>
-        <div class="information">
-            <img src="weather.png" alt="" class="condition_img">
-            <div class="big_wrap">
 
-                <div class="city_wrapper">
-                    <h2 class="city">Vadodara</h2>
-                    <img src="Vector.svg" alt="" class="location_img">
-                </div>
-                <div class="temp_info">
-                    <p class="temp">22°</p>
-                    <p class="Feels_like">Feels like: 20°</p>
+            <div class="search">
+                <input type="text" name="city" id="city" placeholder="Search Location">
+                <div class="search_icon">
+                    <img src="search_24px.svg" alt="search icon">
                 </div>
             </div>
-        </div>
-        <!-- <div class="extra_info">
-        </div> -->
-    </div>
+        </nav>
+        <main>
+            <div class="city_wrapper">
+                <span class="city">Hyderdabad</span>
+                <img src="Vector.svg" alt="" class="location_img">
+            </div>
+            <div class="main-info-wrapper">
+                <div class="main-info">
+                    <div class="condition-info">
+                        <span class="date">04 August 2024</span>
+                        <span class="condition">Sunny</span>
+                        <span class="temperature">30°C</span>
+                    </div>
+                    <div class="condition-image">
+                        <img src="Group 34.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <section>
+            <div class="details">
+                <div class="details-item">
+                    <div class="wind-img">
+                        <img src="fast-wind.svg" alt="">
+                    </div>
+                    <div class="info-items">
+                        <span class="info-text wind">10 m/s</span>
+                        <span class="info-name">Wind</span>
+                    </div>
+                </div>
+                <div class="details-item">
+                    <div class="wind-img">
+                        <img src="humidity.svg" alt="">
+                    </div>
+                    <div class="info-items">
+                        <span class="info-text humidity">98%</span>
+                        <span class="info-name">humidity</span>
+                    </div>
+                </div>
+                <div class="details-item">
+                    <div class="wind-img">
+                        <img src="sun-cloud-hailstone-01.svg" alt="">
+                    </div>
+                    <div class="info-items">
+                        <span class="info-text Rain">100 mm</span>
+                        <span class="info-name">Rain</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+
+            <div class="hourly-forecast">
+                <span>Hourly Forecast</span>
+                <div class="hour-item">
+                    <span class="hour-1">10 am</span>
+                    
+                </div>
+            </div>
+        </section>
 
     <script src="script.js"></script>
 </body>
