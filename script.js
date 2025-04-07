@@ -16,7 +16,7 @@ async function fetchCityName() {
     }
 
     try {
-        let URL = `http://api.weatherapi.com/v1/search.json?key=${api_key}&q=${in_city}`;
+        let URL = `https://api.weatherapi.com/v1/search.json?key=${api_key}&q=${in_city}`;
         const response = await fetch(URL);
         const data = await response.json();
         
@@ -89,7 +89,7 @@ function formatTime(timeString) {
 
 async function fetchWeather() {
     const city = document.getElementById('city').value;
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=2ef7a2b3a52b4e7fadc174847250304&q=${city}&days=01&aqi=no`;
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=2ef7a2b3a52b4e7fadc174847250304&q=${city}&days=01&aqi=no`;
     
     try {
         const response = await fetch(url);
