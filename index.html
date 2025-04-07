@@ -17,6 +17,7 @@
                 <div class="search_icon">
                     <img src="search_24px.svg" alt="search icon">
                 </div>
+                <div class="search-results"></div>  <!-- Add this line -->
             </div>
         </nav>
         <main>
@@ -72,15 +73,34 @@
         <section>
 
             <div class="hourly-forecast">
-                <span>Hourly Forecast</span>
-                <div class="hour-item">
-                    <span class="hour-1">10 am</span>
-                    
+                <span class="forecast_title">Hourly Forecast</span>
+                <div class="hour-item-wrapper">
+                    <div class="hour-item">
+                        <span class="hour-1 hour-time">10 am</span>
+                        <span class="hour-1-img"><img src="sun-cloud-01.svg" alt=""></span>
+                        <span class="hour-1-temp hour-temp">30°</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="hour-2 hour-time">10 am</span>
+                        <span class="hour-2-img"><img src="sun-cloud-01.svg" alt=""></span>
+                        <span class="hour-2-temp hour-temp">30°</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="hour-3 hour-time">10 am</span>
+                        <span class="hour-3-img"><img src="sun-cloud-01.svg" alt=""></span>
+                        <span class="hour-3-temp hour-temp">30°</span>
+                    </div>
+                    <div class="hour-item">
+                        <span class="hour-4 hour-time">10 am</span>
+                        <span class="hour-4-img"><img src="sun-cloud-01.svg" alt=""></span>
+                        <span class="hour-4-temp hour-temp">30°</span>
+                    </div>
                 </div>
             </div>
         </section>
 
     <script src="script.js"></script>
+     <!-- <script src="search.js"></script> -->
 </body>
 
 </html>
