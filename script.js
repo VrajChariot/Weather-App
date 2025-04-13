@@ -111,6 +111,21 @@ async function fetchWeather() {
         document.querySelector(".wind").innerHTML = `${Wind} km/h`;
         document.querySelector(".humidity").innerHTML = `${Humidity}%`;
         document.querySelector(".condition").innerHTML = `${Condition}`;
+        if (Condition.includes("Sunny") || Condition.includes("Clear")) {
+            document.querySelector(".condition-image").innerHTML = `<img src="./assets/Ellipse 83.svg" alt="">`;
+        }
+        else if (Condition.includes("Partly cloudy") || Condition.includes("Cloudy") || Condition.includes("Overcast") || Condition.includes("Partly sunny")) {
+            document.querySelector(".condition-image").innerHTML = `<img src="./assets/Group 37.svg" alt="">`;
+        }
+        else if (Condition.includes("Patchy light rain") || Condition.includes("Patchy rain") || Condition.includes("Light rain") || Condition.includes("Moderate rain") || Condition.includes("Heavy rain")) {
+            document.querySelector(".condition-image").innerHTML = `<./assets/Group 38.svg" alt="">`;
+        }
+        else if (Condition.includes("Patchy light rain with thunder") || Condition.includes("Patchy rain with thunder") || Condition.includes("Light rain with thunder") || Condition.includes("Moderate rain with thunder") || Condition.includes("Heavy rain with thunder")) {
+            document.querySelector(".condition-image").innerHTML = `<img src="./assets/Group 40.svg" alt="">`;
+        }
+        // else if (Condition.includes("Partly cloudy")) {
+        //     document.querySelector(".condition-image").innerHTML = `<img src="./assets/Group 37.svg" alt="">`;
+        // }
         document.querySelector(".Rain").innerHTML = `${rain} mm`;
         document.querySelector(".date").innerHTML = `${formattedDate}`;
 
